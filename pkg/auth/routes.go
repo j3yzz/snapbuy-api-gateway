@@ -23,5 +23,5 @@ func (svc *ServiceClient) Register(ctx *gin.Context) {
 }
 
 func (svc *ServiceClient) Login(ctx *gin.Context) {
-	routes.Register(ctx, svc.Client)
+	routes.Login(ctx, svc.Client)
 }
