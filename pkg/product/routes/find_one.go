@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-func findOne(ctx *gin.Context, c pb.ProductServiceClient) {
+func FindOne(ctx *gin.Context, c pb.ProductServiceClient) {
 	id, _ := strconv.ParseInt(ctx.Param("id"), 10, 32)
 
 	res, err := c.FindOne(context.Background(), &pb.FindOneRequest{
