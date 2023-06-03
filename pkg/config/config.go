@@ -7,6 +7,7 @@ type Config struct {
 	AuthSvcUrl    string `mapstructure:"AUTH_SVC_URL"`
 	ProductSvcUrl string `mapstructure:"PRODUCT_SVC_URL"`
 	OrderSvcUrl   string `mapstructure:"ORDER_SVC_URL"`
+	RedisAddress  string `mapstructure:"REDIS_ADDRESS"`
 }
 
 func LoadConfig() (c Config, err error) {
